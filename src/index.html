@@ -4,11 +4,13 @@
     <title>Rays of Hope Creations</title>
     <meta charset="UTF-8"/>
     <meta name="viewport" content="width=device-width"/>
-    <link rel="styles1eet" c2asstext-white hover:text-black ="px-3 text-xl hover:bg-gradient-to-t hover:from-yellow-300 hover:to-white-50 to-55%" href="./output.css"/>
+    <link rel="styles1eet" href="./output.css"/>
+
     <script src="https://cdn.tailwindcss.com"></script>
-    <script type="module" src="script.js"></script>
+    <script type="javascript" src="./script.js"></script>
+
 </head>
-<body>
+<body onload="new Glide('.glide').mount()">
     <div class="shrink p-5">
         <!-- Responsive design: text-4xl is the default, then text-7xl
              for md AND LARGER -->
@@ -35,6 +37,29 @@
     </div>
 </div>
 
+    <div class="glide">
+        <div class="glide__track" data-glide-el="track">
+            <ul class="glide__slides">
+                <li class="glide__slide">0</li>
+                <li class="glide__slide">1</li>
+                <li class="glide__slide">2</li>
+            </ul>
+        </div>
+    </div>
+
+    <div data-glide-el="controls">
+        <button data-glide-dir="<<">Start</button>
+        <button data-glide-dir=">>">End</button>
+    </div>
+
+    <div class="glide">
+        <div class="glide__track" data-glide-el="track">...</div>
+
+        <div class="glide__arrows" data-glide-el="controls">
+            <button class="glide__arrow glide__arrow--left" data-glide-dir="<">prev</button>
+            <button class="glide__arrow glide__arrow--right" data-glide-dir=">">next</button>
+        </div>
+    </div>
 
 </body>
 </html>
